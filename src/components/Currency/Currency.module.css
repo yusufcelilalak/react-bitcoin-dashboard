@@ -1,0 +1,50 @@
+.currency {
+  width: 25%;
+  height: 100%;
+  background-color: rgb(255, 244, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgb(185, 185, 185);
+}
+
+.rate {
+  margin-top: 1rem;
+}
+.increase {
+  animation-name: makeGreen;
+  animation-duration: 2s;
+}
+
+.decrease {
+  animation-name: makeRed;
+  animation-duration: 2s;
+}
+
+@keyframes makeGreen {
+  0% {
+    background-color: rgb(255, 244, 244);
+  }
+  50% {
+    background-color: rgb(146, 251, 119);
+  }
+
+  100% {
+    background-color: rgb(255, 244, 244);
+  }
+}
+
+@keyframes makeRed {
+  0% {
+    background-color: rgb(255, 244, 244);
+  }
+  50% {
+    background-color: rgb(251, 148, 119);
+  }
+
+  100% {
+    background-color: rgb(255, 244, 244);
+  }
+}

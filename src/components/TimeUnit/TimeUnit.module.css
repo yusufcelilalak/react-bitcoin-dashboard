@@ -1,0 +1,63 @@
+.time-unit {
+  height: 6rem;
+  width: 7.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(106, 101, 101);
+  padding: 1px 6px;
+  column-gap: 4px;
+}
+
+.time-changer-buttons {
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  font-weight: 600;
+}
+
+.time-changer-buttons button {
+  background-color: rgb(245, 148, 51);
+  box-shadow: 0 0 3px 0px rgb(0, 0, 0);
+  border-radius: 3px;
+  border-style: none;
+  height: 40%;
+  width: 1.5rem;
+  margin: 3px;
+  font-size: 1.2rem;
+}
+
+.unit {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(209, 204, 204);
+  box-shadow: 0 0 5px 0px rgb(0, 0, 0);
+  aspect-ratio: 1/1;
+  width: 90%;
+  color: rgb(51, 50, 50);
+  font-size: 2rem;
+}
+
+.unit h2 {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .time-unit {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .time-changer-buttons {
+    height: 80%;
+  }
+  .time-changer-buttons button {
+    width: 1rem;
+    margin: 3px;
+    font-size: 1.2rem;
+  }
+}
